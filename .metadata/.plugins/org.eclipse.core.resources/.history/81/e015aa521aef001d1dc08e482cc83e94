@@ -1,0 +1,56 @@
+package study02;
+
+import java.util.Arrays;
+
+public class Cashier {
+
+	int[] coinUnit = {10000, 5000, 1000, 500, 100, 50, 10};
+	int[] coin     = {2, 4, 0, 5, 5, 5, 5};
+
+	String[] fruit = {"사과", "메론", "바나나", "딸기", "수박", "블루베리", "참외", "포도", "배"};
+	int[] price = {4990, 7890, 3990, 14990, 17990, 9990, 1990, 24990, 4590};
+
+	int total;
+	int money;
+	
+	public Cashier() {
+		
+	}
+
+	public Cashier(int money) {
+		this.money = money;
+	}
+
+	public int account() {
+		for(int i = 0; i < coin.length; i++) {
+			total += coinUnit[i] * coin[i];
+		}		
+		return total;
+	}
+
+	public void receipt() {
+		
+		System.out.println("========영수증========");
+		
+		for(int i = 0; i < 5; i++) {
+			
+			int n = (int)Math.random()*8;
+			
+			String temp1 = fruit[i];
+			int temp2 = price[i];
+			fruit[i] = fruit[n];
+			price[i] = price[n];
+			fruit[n] = temp1;
+			price[n] = temp2;
+		}
+		
+		System.out.println(Arrays.toString(fruit));
+		System.out.println(Arrays.toString(price));
+		
+	}
+
+	public void calculate(int money, int total) {
+
+	}
+
+}

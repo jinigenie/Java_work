@@ -1,0 +1,10 @@
+package quiz12;
+
+public class Radio extends Product {
+
+	//Radio는 생성자 1개, 가격 300원, 이름 자유
+	public Radio(){
+		super(300, "sony");
+	}
+	
+}

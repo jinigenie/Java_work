@@ -1,0 +1,22 @@
+package day12.trycatch;
+import java.util.Scanner;
+
+public class TryCatchEx03 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		// next, nextInt, nextDouble, nextLine 
+		
+//		System.out.print("정수>");
+//		int num = scan.nextInt();
+		
+		System.out.print("문자열>");
+		String info = scan.nextLine();
+		
+//		System.out.println(num);
+		System.out.println(info);
+		
+	}
+}

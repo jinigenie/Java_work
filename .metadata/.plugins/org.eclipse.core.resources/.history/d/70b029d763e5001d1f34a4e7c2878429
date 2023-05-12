@@ -1,0 +1,48 @@
+package day12.trycatch;
+import java.util.Scanner;
+
+public class TryCatchEx03 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+
+/*		
+		
+		// next, nextInt, nextDouble, nextLine 
+		
+		System.out.print("정수>");
+		int num = scan.nextInt(); // 엔터기준 앞까지 받음
+
+		// 정수 입력 후, 엔터 치면 엔터를 문자열로 받기 때문에 중간에 엔터 소비
+		scan.nextLine();
+		
+		System.out.print("문자열>");
+		String info = scan.nextLine(); // 엔터를 포함해서 받음
+		
+		System.out.println(num);
+		System.out.println(info);
+*/
+		
+		while(true) {
+			
+			try {
+
+				System.out.println(">");
+				int num = scan.nextInt();
+				
+				System.out.println(num);
+
+			
+			} catch (Exception e) {
+
+				System.out.print("숫자로 입력하세요.");
+				
+			}
+			
+			
+		}
+		
+		
+	}
+}

@@ -1,0 +1,23 @@
+package study02;
+
+public class Quiz01_hyeon {
+	
+	public int[] lotto(int n1, int n2, int n3) {
+		
+		int[] arr = new int[6];
+		arr[0] = n1;
+		arr[1] = n2;
+		arr[2] = n3;
+		
+		
+		
+		return arr;
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+	}
+}

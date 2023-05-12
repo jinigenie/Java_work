@@ -1,0 +1,19 @@
+package day16.api.io.buffered;
+
+import java.io.*;
+
+public class BufferedReader {
+	public static void main(String[] args) {
+		
+		/*
+		 * 
+		 * 
+		 * 
+		 */
+	
+		String path = "C:\\Users\\user\\Desktop\\course\\java\\file\\test.txt";
+
+		
+		
+	}
+}
